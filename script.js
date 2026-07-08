@@ -1,6 +1,121 @@
-const encodedScript = "Y29uc3QgcGFydHMgPSBbCiAgewogICAgaWQ6IDEsCiAgICB0aXRsZTogIuWGt+aImOaXtuacn+eahOetueeggSIsCiAgICByYW5nZTogIuesrCAxLTYg56ugIiwKICAgIHN1bW1hcnk6ICLku47kuozmiJjlkI7nmoTorqHnrpfpnIDmsYLorrLotbfvvIzor7TmmI7mmbbkvZPnrqHjgIHpm4bmiJDnlLXot6/jgIHlhYnliLvlkozml6nmnJ/lhpvmlrnorqLljZXlpoLkvZXmiornvo7lm73luKblhaXnoYXml7bku6PjgIIiCiAgfSwKICB7CiAgICBpZDogMiwKICAgIHRpdGxlOiAi576O5Zu95LiW55WM55qE55S16LevIiwKICAgIHJhbmdlOiAi56ysIDctMTQg56ugIiwKICAgIHN1bW1hcnk6ICLlr7nmr5Toi4/ogZTlpI3liLbot6/nur/kuI7nvo7lm73luILlnLrljJbliJvmlrDvvIzlkIzml7blsZXnpLroiq/niYfmgI7moLfov5vlhaXmtojotLnnlLXlrZDjgIHkuprmtLLnu4Too4Xlkoznvo7lm73lhpvkuovkvZPns7vjgIIiCiAgfSwKICB7CiAgICBpZDogMywKICAgIHRpdGxlOiAi5aSx5Y676aKG5a+86IO95Yqb77yfIiwKICAgIHJhbmdlOiAi56ysIDE1LTIwIOeroCIsCiAgICBzdW1tYXJ5OiAi6K6y5pel5pys5Y2K5a+85L2T5bSb6LW344CB576O5Zu95a2Y5YKo6Iqv54mH5Lqn5Lia5Y+X5Yay5Ye777yM5Lul5Y+K576O5Zu95a+55Lqn5Lia5Li75a+85p2D5rWB5aSx55qE54Sm6JmR44CCIgogIH0sCiAgewogICAgaWQ6IDQsCiAgICB0aXRsZTogIue+juWbveWkjeWFtCIsCiAgICByYW5nZTogIuesrCAyMS0yOCDnq6AiLAogICAgc3VtbWFyeTogIuiLseeJueWwlOOAgeW+rui9r+OAgemfqeWbveOAgeWGm+S6i+eUteWtkOWSjOiLj+iBlOihsOiQveWFseWQjOaehOaIkOe+juWbveWPjeWHu+S4juWGt+aImOiDnOWIqeeahOaKgOacr+S+p+mdouOAgiIKICB9LAogIHsKICAgIGlkOiA1LAogICAgdGl0bGU6ICLpm4bmiJDnlLXot6/vvIzpm4bmiJDkuJbnlYzvvJ8iLAogICAgcmFuZ2U6ICLnrKwgMjktMzQg56ugIiwKICAgIHN1bW1hcnk6ICLkuK3lm73lj7Dmub7ku6Plt6XjgIHkuK3lm73lpKfpmYblu7rljoLjgIHlhYnliLvnq57kuonlkozlhajnkIPljJbliIblt6Xlh7rnjrDvvIzoiq/niYfkvpvlupTpk77lvIDlp4vpq5jluqbot6jlm73ljJbjgIIiCiAgfSwKICB7CiAgICBpZDogNiwKICAgIHRpdGxlOiAi56a75bK45Yib5paw77yfIiwKICAgIHJhbmdlOiAi56ysIDM1LTQxIOeroCIsCiAgICBzdW1tYXJ5OiAi5peg5pm25ZyG5Y6C5qih5byP44CB5Y+w56ev55S16IGU55uf44CB6Iu55p6c6Ieq56CU6Iqv54mH44CBRVVW5YWJ5Yi75py65ZKM6Iux54m55bCU6L2s5oqY77yM6K+05piO5Yib5paw5q2j5Zyo5YiG5pWj5Yiw5YWo55CD6IqC54K544CCIgogIH0sCiAgewogICAgaWQ6IDcsCiAgICB0aXRsZTogIuS4reWbveeahOaMkeaImCIsCiAgICByYW5nZTogIuesrCA0Mi00OCDnq6AiLAogICAgc3VtbWFyeTogIuiBmueEpuS4reWbveWItumAoOOAgeaKgOacr+i9rOiuqeOAgeS6p+S4muaUv+etluOAgeWNjuS4uuWSjDVH77yM6Kej6YeK5Lit5Zu95Li65L2V5oiQ5Li6576O5Zu96Iqv54mH5oiY55Wl55qE5qC45b+D5a+56LGh44CCIgogIH0sCiAgewogICAgaWQ6IDgsCiAgICB0aXRsZTogIuiKr+eJh+eTtumiiCIsCiAgICByYW5nZTogIuesrCA0OS01NCDnq6AiLAogICAgc3VtbWFyeTogIuS7juWHuuWPo+euoeWItuOAgeemj+W7uuaZi+WNjuOAgeWNjuS4uuWItuijgeOAgeefree8uuWNseacuuWSjOWPsOa5vuWbsOWig++8jOaUtuadn+WIsOW9k+S7o+iKr+eJh+aImOS6ieeahOiEhuW8seiKgueCueOAgiIKICB9Cl07Cgpjb25zdCBjaGFwdGVycyA9IFsKICB7CiAgICBubzogMSwKICAgIHBhcnQ6IDEsCiAgICB0aXRsZTogIuS7jumSoumTgeWIsOehheeJhyIsCiAgICB0YWdzOiBbIuS6jOaImCIsICLorqHnrpfog73lipsiLCAi5Yab5LqL5oqA5pyvIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug55So5LqM5oiY55qE5bel5Lia5Yqo5ZGY5byA5Zy677ya6L+H5Y675Yaz5a6a5oiY5LqJ6IOc6LSf55qE5piv6ZKi6ZOB44CB55+z5rK544CB6Ii55Y+q5ZKM6aOe5py677yM5L2G5oiY5LqJ5ZCO5pyf5bey57uP5Ye6546w5a+557K+56Gu6K6h566X5ZKM55S15a2Q5o6n5Yi255qE6ZyA5rGC44CC55ub55Sw5pit5aSr44CB5byg5b+g6LCL44CB5a6J6L+qwrfmoLzpsoHlpKvnrYnkurrniannmoTmiJjml7bnu4/ljobooqvmlL7lnKjlkIzkuIDog4zmma/kuIvvvIzor7TmmI7lkI7mnaXnmoToiq/niYfkuqfkuJrlubbkuI3mmK/lraTnq4vor57nlJ/vvIzogIzmmK/ku47lhpvkuovnsr7luqbjgIHorqHnrpfpnIDmsYLlkozmiJjlkI7np5HmioDph43lu7rkuK3plb/lh7rmnaXjgIIiCiAgfSwKICB7CiAgICBubzogMiwKICAgIHBhcnQ6IDEsCiAgICB0aXRsZTogIuW8gOWFsyIsCiAgICB0YWdzOiBbIuaZtuS9k+euoSIsICLotJ3lsJTlrp7pqozlrqQiLCAi55yf56m6566hIl0sCiAgICBzdW1tYXJ5OiAi6L+Z5LiA56ug6Kej6YeK6K6h566X55qE5Z+656GA5piv5aSn6YeP5Y+v6Z2g55qE5byA5YWz44CC55yf56m6566h6K6h566X5py66Jm954S25q+U5Lq657G76K6h566X5b+r77yM5Y205L2T56ev5beo5aSn44CB5piT5o2f44CB5oiQ5pys6auY44CC5pm25L2T566h55qE5Ye6546w5oqK5byA5YWz5Y+Y5bCP44CB5Y+Y56iz5a6a77yM5Lmf6K6p55S15a2Q6K6h566X5LuO5bCR5pWw5a6e6aqM5a6k5ZKM5Yab5pa56aG555uu6LWw5ZCR5Y+v5omp5bGV5Lqn5Lia77yM5oiQ5Li65Y2K5a+85L2T6Z2p5ZG955qE55yf5q2j6LW354K544CCIgogIH0sCiAgewogICAgbm86IDMsCiAgICBwYXJ0OiAxLAogICAgdGl0bGU6ICLor7rkvIrmlq/jgIHln7rlsJTmr5Tlkozpm4bmiJDnlLXot68iLAogICAgdGFnczogWyLpm4bmiJDnlLXot68iLCAiVEkiLCAi5LuZ56ulIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug6K6y6ZuG5oiQ55S16Lev55qE5Y+R5piO77ya5Z+65bCU5q+U5ZKM6K+65LyK5pav5YiG5Yir5om+5Yiw5oqK5aSa5Liq55S15a2Q5YWD5Lu26ZuG5oiQ5Zyo5ZCM5LiA5Y2K5a+85L2T5p2Q5paZ5LiK55qE5Yqe5rOV44CC5L2c6ICF5by66LCD77yM5Y+R5piO5pys6Lqr6YeN6KaB77yM5L2G5Lqn5Lia5YyW5pu05YWz6ZSu77yM5Zug5Li65Y+q5pyJ5oqK5aSN5p2C55S16Lev5Y+Y5oiQ5Y+v5om56YeP55Sf5Lqn44CB5Y+v6ZSA5ZSu44CB5Y+v6ZmN5Lu355qE5Lqn5ZOB77yM6Iqv54mH5omN5Lya55yf5q2j5pS55Y+Y5LiW55WM44CCIgogIH0sCiAgewogICAgbm86IDQsCiAgICBwYXJ0OiAxLAogICAgdGl0bGU6ICLotbfpo54iLAogICAgdGFnczogWyLnoYXosLciLCAi5LuZ56ul5YWr5Y+b6YCGIiwgIuWIm+S4miJdLAogICAgc3VtbWFyeTogIui/meS4gOeroOaKiuS7meerpeWNiuWvvOS9k+aUvuWcqOehheiwt+W9ouaIkOeahOaguOW/g+S9jee9ruOAguW3peeoi+W4iOOAgeWIm+S4muiAheOAgemjjumZqei1hOacrOWSjOWGm+aWueiuouWNleS6pOe7h+WcqOS4gOi1t++8jOW9ouaIkOS6huS4jeWQjOS6juS8oOe7n+Wkp+WFrOWPuOWunumqjOWupOeahOWIm+aWsOeOr+Wig+OAguiKr+eJh+S6p+S4mui1t+mjnuS4jeaYr+WNleS4quWkqeaJjeeahOe7k+aenO+8jOiAjOaYr+enkeWtpuOAgeW3peeoi+OAgei1hOacrOWSjOWIm+S4muaWh+WMluWFseWQjOS9nOeUqOeahOe7k+aenOOAgiIKICB9LAogIHsKICAgIG5vOiA1LAogICAgcGFydDogMSwKICAgIHRpdGxlOiAi6L+r5Ye754Ku5ZKM6KeE5qih55Sf5LqnIiwKICAgIHRhZ3M6IFsi5YWJ5Yi7IiwgIuiJr+eOhyIsICLlvKDlv6DosIsiXSwKICAgIHN1bW1hcnk6ICLmnKznq6Dph43ngrnovazlkJHliLbpgKDjgILlhYnliLvmioDmnK/orqnlvq7lsI/nlLXot6/lj6/ku6XooqvlpI3liLbliLDmmbblnIbkuIrvvIzkvYbnnJ/mraPlm7Dpmr7lnKjkuo7mnZDmlpnnuq/luqbjgIHmuKnluqbjgIHmjqnmqKHjgIHmsaHmn5PmjqfliLblkozoia/njofjgILlvKDlv6DosIvlnKhUSeaPkOWNh+eUn+S6p+e6v+iJr+eOh+eahOaVheS6i+ivtOaYju+8jOiKr+eJh+S6p+S4mueahOWjgeWekuS4jeS7heaYr+iuvuiuoe+8jOabtOaYr+aKiuW+ruinguW3peiJuueos+WumuWcsOinhOaooeWMluOAgiIKICB9LAogIHsKICAgIG5vOiA2LAogICAgcGFydDogMSwKICAgIHRpdGxlOiAi4oCc5oiR4oCm4oCm6KaB4oCm4oCm5Y+R4oCm4oCm6LSi4oCdIiwKICAgIHRhZ3M6IFsi5pGp5bCU5a6a5b6LIiwgIuawkeeUqOW4guWcuiIsICLpo47pmanotYTmnKwiXSwKICAgIHN1bW1hcnk6ICLmnKznq6DorrLoiq/niYfku47lhpvmlrnpnIDmsYLotbDlkJHmsJHnlKjluILlnLrjgILor7rkvIrmlq/lkozmkanlsJTmhI/or4bliLDvvIzpmY3ku7flkozmianlpKflupTnlKjmr5TljZXnuq/kvp3otZblhpvmlrnlkIjlkIzmm7TmnInliY3pgJTjgILmkanlsJTlrprlvovlnKjov5nph4zkuI3ku4XmmK/mioDmnK/pooTmtYvvvIzkuZ/mmK/kuIDnp43llYbkuJrpgLvovpHvvJrmgKfog73kuIrljYfjgIHmiJDmnKzkuIvpmY3jgIHluILlnLrmianlpKfvvIzov5vogIzlkLjlvJXmm7TlpJrotYTmnKzlkozkurrmiY3jgIIiCiAgfSwKICB7CiAgICBubzogNywKICAgIHBhcnQ6IDIsCiAgICB0aXRsZTogIuiLj+iBlOehheiwtyIsCiAgICB0YWdzOiBbIuiLj+iBlCIsICLms73liJfor7rmoLzli5IiLCAi5Ya35oiYIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug6L2s5ZCR6IuP6IGU44CC6IuP6IGU6K+V5Zu+5bu656uL6Ieq5bex55qE55S15a2Q5bel5Lia5Lit5b+D77yM6L+96LW2576O5Zu96Iqv54mH5oqA5pyv77yM5L2G5Yi25bqm546v5aKD5ZKM5Lqn5Lia57uE57uH5pa55byP6ZmQ5Yi25LqG5Yib5paw44CC5L2c6ICF5YCf5q2k5a+55q+U576O5Zu955Sf5oCB55qE5byA5pS+56ue5LqJ5LiO6IuP6IGU6K6h5YiS5L2T57O755qE5bCB6Zet5aSN5Yi277yM5oyH5Ye65Y2K5a+85L2T5LiN5piv6Z2g5ZG95Luk5bCx6IO95oyB57ut6aKG5YWI55qE5Lqn5Lia44CCIgogIH0sCiAgewogICAgbm86IDgsCiAgICBwYXJ0OiAyLAogICAgdGl0bGU6ICLigJzlpI3liLbigJ3nrZbnlaUiLAogICAgdGFnczogWyLpgIblkJHlt6XnqIsiLCAi6K6h5YiS57uP5rWOIiwgIuaKgOacr+i/vei1tiJdLAogICAgc3VtbWFyeTogIui/meS4gOeroOiusuiLj+iBlOmAmui/h+S7v+WItue+juWbveiKr+eJh+i/vei1tu+8jOS9huWkjeWItuS8muWkqeeEtuiQveWQjuS6juWOn+Wni+WIm+aWsOOAguetieiLj+iBlOaLhuino+OAgeeQhuino+W5tueUn+S6p+WHuuexu+S8vOS6p+WTgeaXtu+8jOe+juWbveS8geS4muW3sue7j+i/m+WFpeS4i+S4gOS7o+aKgOacr+OAguiKr+eJh+S6p+S4mueahOW/q+iKguWlj+iuqeKAnOeFp+aKhOKAneWPmOaIkOaMgee7reiQveWQjueahOaImOeVpeOAgiIKICB9LAogIHsKICAgIG5vOiA5LAogICAgcGFydDogMiwKICAgIHRpdGxlOiAi5pm25L2T566h5o6o6ZSA5ZGYIiwKICAgIHRhZ3M6IFsi5raI6LS555S15a2QIiwgIue0ouWwvCIsICLluILlnLoiXSwKICAgIHN1bW1hcnk6ICLmnKznq6DorrLmmbbkvZPnrqHov5vlhaXmsJHnlKjmtojotLnnlLXlrZDjgILntKLlsLznrYnlhazlj7jmiornvo7lm73lj5HmmI7nmoTmmbbkvZPnrqHovazljJbkuLrmlLbpn7PmnLrnrYnlpKfkvJfkuqflk4HvvIzor4HmmI7kuprmtLLkvIHkuJrog73lnKjliLbpgKDjgIHkuqflk4HljJblkozlhajnkIPplIDllK7kuIrlu7rnq4vkvJjlir/jgILmioDmnK/mianmlaPnlLHmraTkuI3lho3lj6rmmK/lhpvkuovpl67popjvvIzkuZ/miJDkuLrmtojotLnluILlnLrnq57kuonjgIIiCiAgfSwKICB7CiAgICBubzogMTAsCiAgICBwYXJ0OiAyLAogICAgdGl0bGU6ICLigJzmmbbkvZPnrqHlpbPlranigJ0iLAogICAgdGFnczogWyLkuprmtLLnu4Too4UiLCAi5Yqz5Yqo5YqbIiwgIuS+m+W6lOmTviJdLAogICAgc3VtbWFyeTogIui/meS4gOeroOivtOaYjue+juWbveiKr+eJh+WFrOWPuOS4uuS9leaKiuWwgeijheWSjOe7hOijhei/geW+gOS6mua0suOAguS4nOWNl+S6muWSjOS4nOS6mueahOS9juaIkOacrOOAgee7huiHtOWKs+WKqOWKm+W4ruWKqee+juWbveS8geS4mumZjeS9juaIkOacrO+8jOS5n+iuqeS6mua0sumAkOatpei/m+WFpeWNiuWvvOS9k+S+m+W6lOmTvuOAguacgOWIneeci+S8vOS9juerr+eahOe7hOijheeOr+iKgu+8jOWQjuadpeaIkOS4uuS6p+S4muWtpuS5oOWSjOWMuuWfn+W0m+i1t+eahOWFpeWPo+OAgiIKICB9LAogIHsKICAgIG5vOiAxMSwKICAgIHBhcnQ6IDIsCiAgICB0aXRsZTogIueyvuWHhuaJk+WHuyIsCiAgICB0YWdzOiBbIui2iuaImCIsICLliLblr7zmrablmagiLCAi5Yab5LqL55S15a2QIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug6K6y6Iqv54mH5aaC5L2V5pS55Y+Y5Yab5LqL6IO95Yqb44CC5b6u55S15a2Q5oqA5pyv5L2/5r+A5YWJ5Yi25a+854K45by544CB5Lyg5oSf5Zmo5ZKM5o6n5Yi257O757uf5pu05Y+v6Z2g77yM5oiY5LqJ5LuO4oCc5aSn6YeP5oqV5pS+4oCd6L2s5ZCR4oCc57K+56Gu5omT5Ye74oCd44CC6L+Z5Lmf6Kej6YeK5LqG5Li65LuA5LmI576O5Zu95Yab5pa55LiA55u06YeN6KeG5Y2K5a+85L2T77yM5Zug5Li66Iqv54mH55u05o6l5YWz57O75Yiw5Yab5LqL5LyY5Yq/44CCIgogIH0sCiAgewogICAgbm86IDEyLAogICAgcGFydDogMiwKICAgIHRpdGxlOiAi5L6b5bqU6ZO+562W55WlIiwKICAgIHRhZ3M6IFsi5Lqa5rSy55uf5Y+LIiwgIuemu+WyuOeUn+S6pyIsICLnvo7lm73np6nluo8iXSwKICAgIHN1bW1hcnk6ICLmnKznq6DmiorljYrlr7zkvZPkvpvlupTpk77mlL7ov5vnvo7lm73lhrfmiJjmiJjnlaXjgILnvo7lm73kvIHkuJrlnKjkuprmtLLorr7ljoLkuI3lj6rmmK/pgJDliKnvvIzkuZ/kuI7nvo7lm73mibbmjIHnm5/lj4vjgIHnu5HlrprljLrln5/nu4/mtY7mnInlhbPjgILoiq/niYfkuqfkuJrlm6DmraTmiJDkuLrkuIDnp43lnLDnvJjnu4/mtY7lt6XlhbfvvJrpgJrov4fnlJ/kuqfnvZHnu5zmiorkuprmtLLnm5/lj4vnurPlhaXnvo7lm73kuLvlr7znmoTmioDmnK/kvZPns7vjgIIiCiAgfSwKICB7CiAgICBubzogMTMsCiAgICBwYXJ0OiAyLAogICAgdGl0bGU6ICLoi7HnibnlsJTnmoTpnanlkb0iLAogICAgdGFnczogWyLlvq7lpITnkIblmagiLCAi6Iux54m55bCUIiwgIuS4quS6uueUteiEkSJdLAogICAgc3VtbWFyeTogIui/meS4gOeroOiusuiLseeJueWwlOWSjOW+ruWkhOeQhuWZqOeahOWHuueOsOOAgumAmueUqOiuoeeul+iKr+eJh+S9v+iuoeeul+iDveWKm+S7juS4k+eUqOiuvuWkh+aJqeaVo+WIsOabtOW5v+azm+eahOS6p+WTgeS4re+8jOS4uuS4quS6uueUteiEkeaXtuS7o+mTuui3r+OAguiKr+eJh+S4jeWGjeWPquaYr+afkOS4quiuvuWkh+eahOmDqOS7tu+8jOiAjOaIkOS4uuWPr+S7pempseWKqOaVtOS4quiuoeeul+eUn+aAgeeahOaguOW/g+W5s+WPsOOAgiIKICB9LAogIHsKICAgIG5vOiAxNCwKICAgIHBhcnQ6IDIsCiAgICB0aXRsZTogIuS6lOinkuWkp+alvOeahOaKtea2iOaImOeVpSIsCiAgICB0YWdzOiBbIuaKtea2iOaImOeVpSIsICLkvKDmhJ/lmagiLCAi5Ya35oiY5Yab5LqLIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug6Kej6YeK576O5Zu95aaC5L2V55So5b6u55S15a2Q5oq15raI6IuP6IGU5bi46KeE5Yab5Yqb5LyY5Yq/44CC5Lyg5oSf5Zmo44CB5Yi25a+857O757uf44CB6YCa5L+h5ZKM6K6h566X6IO95Yqb6K6p576O5Yab6IO95aSf5pu057K+5YeG5Zyw5Y+R546w44CB5a6a5L2N5ZKM5omT5Ye755uu5qCH44CC6Iqv54mH55Sx5q2k5oiQ5Li65Zu95a625a6J5YWo5oiY55Wl55qE5LiA6YOo5YiG77yM6ICM5LiN5Y+q5piv5ZWG5Lia5oqA5pyv44CCIgogIH0sCiAgewogICAgbm86IDE1LAogICAgcGFydDogMywKICAgIHRpdGxlOiAi4oCc56ue5LqJ5b6I5r+A54OI4oCdIiwKICAgIHRhZ3M6IFsi5pel5pys5oyR5oiYIiwgIkRSQU0iLCAi5Lqn5Lia56ue5LqJIl0sCiAgICBzdW1tYXJ5OiAi5pys56ug6L+b5YWl5pel5pys5Y2K5a+85L2T5bSb6LW36Zi25q6144CC5pel5pys5LyB5Lia5Zyo5a2Y5YKo6Iqv54mH5bCk5YW25pivRFJBTeS4iuW/q+mAn+i/vei1tu+8jOWHreWAn+i0qOmHj+aOp+WItuOAgeWItumAoOe6quW+i+WSjOmVv+acn+aKlei1hOe7mee+juWbveWFrOWPuOW3qOWkp+WOi+WKm+OAgue+juWbveW8gOWni+aEj+ivhuWIsO+8jOWNiuWvvOS9k+mihuWvvOadg+WPr+iDveS8muS7juehheiwt+i9rOenu+WIsOS6mua0suWItumAoOW8uuWbveOAgiIKICB9Cl07Cgpjb25zdCBwYXJ0TWFwID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiI3BhcnRNYXAiKTsKY29uc3QgcGFydFNlbGVjdCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNwYXJ0U2VsZWN0Iik7CmNvbnN0IGNoYXB0ZXJMaXN0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiI2NoYXB0ZXJMaXN0Iik7CmNvbnN0IHNlYXJjaElucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcigiI3NlYXJjaElucHV0Iik7CmNvbnN0IGJhY2tUb3AgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCIjYmFja1RvcCIpOwoKZnVuY3Rpb24gcmVuZGVyUGFydHMoKSB7CiAgcGFydE1hcC5pbm5lckhUTUwgPSBwYXJ0cwogICAgLm1hcCgKICAgICAgKHBhcnQpID0+IGAKICAgICAgICA8YXJ0aWNsZSBjbGFzcz0icGFydENhcmQiPgogICAgICAgICAgPGRpdiBjbGFzcz0icGFydE1ldGEiPlBhcnQgJHtwYXJ0LmlkfSAvICR7cGFydC5yYW5nZX08L2Rpdj4KICAgICAgICAgIDxoMz4ke3BhcnQudGl0bGV9PC9oMz4KICAgICAgICAgIDxwPiR7cGFydC5zdW1tYXJ5fTwvcD4KICAgICAgICA8L2FydGljbGU+CiAgICAgIGAKICAgICkKICAgIC5qb2luKCIiKTsKCiAgcGFydFNlbGVjdC5pbnNlcnRBZGphY2VudEhUTUwoCiAgICAiYmVmb3JlZW5kIiwKICAgIHBhcnRzLm1hcCgocGFydCkgPT4gYDxvcHRpb24gdmFsdWU9IiR7cGFydC5pZH0iPuesrCAke3BhcnQuaWR9IOmDqO+8miR7cGFydC50aXRsZX08L29wdGlvbj5gKS5qb2luKCIiKQogICk7Cn0KCmZ1bmN0aW9uIHJlbmRlckNoYXB0ZXJzKCkgewogIGNvbnN0IGtleXdvcmQgPSBzZWFyY2hJbnB1dC52YWx1ZS50cmltKCkudG9Mb3dlckNhc2UoKTsKICBjb25zdCBzZWxlY3RlZFBhcnQgPSBwYXJ0U2VsZWN0LnZhbHVlOwoKICBjb25zdCBmaWx0ZXJlZCA9IGNoYXB0ZXJzLmZpbHRlcigoY2hhcHRlcikgPT4gewogICAgY29uc3QgaW5QYXJ0ID0gc2VsZWN0ZWRQYXJ0ID09PSAiYWxsIiB8fCBTdHJpbmcoY2hhcHRlci5wYXJ0KSA9PT0gc2VsZWN0ZWRQYXJ0OwogICAgY29uc3QgaGF5c3RhY2sgPSBgJHtjaGFwdGVyLm5vfSAke2NoYXB0ZXIudGl0bGV9ICR7Y2hhcHRlci5zdW1tYXJ5fSAke2NoYXB0ZXIudGFncy5qb2luKCIgIil9YC50b0xvd2VyQ2FzZSgpOwogICAgcmV0dXJuIGluUGFydCAmJiAoIWtleXdvcmQgfHwgaGF5c3RhY2suaW5jbHVkZXMoa2V5d29yZCkpOwogIH0pOwoKICBjaGFwdGVyTGlzdC5pbm5lckhUTUwgPSBmaWx0ZXJlZAogICAgLm1hcCgoY2hhcHRlcikgPT4gewogICAgICBjb25zdCBwYXJ0ID0gcGFydHMuZmluZCgoaXRlbSkgPT4gaXRlbS5pZCA9PT0gY2hhcHRlci5wYXJ0KTsKICAgICAgcmV0dXJuIGAKICAgICAgICA8YXJ0aWNsZSBjbGFzcz0iY2hhcHRlckNhcmQiPgogICAgICAgICAgPGRpdiBjbGFzcz0iY2hhcHRlck5vIj4KICAgICAgICAgICAgPHN0cm9uZz4ke1N0cmluZyhjaGFwdGVyLm5vKS5wYWRTdGFydCgyLCAiMCIpfTwvc3Ryb25nPgogICAgICAgICAgICA8c3Bhbj7nrKwgJHtjaGFwdGVyLnBhcnR9IOmDqDxicj4ke3BhcnQudGl0bGV9PC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2PgogICAgICAgICAgICA8aDM+JHtjaGFwdGVyLnRpdGxlfTwvaDM+CiAgICAgICAgICAgIDxwPiR7Y2hhcHRlci5zdW1tYXJ5fTwvcD4KICAgICAgICAgICAgPGRpdiBjbGFzcz0idGFncyI+JHtjaGFwdGVyLnRhZ3MubWFwKCh0YWcpID0+IGA8c3Bhbj4ke3RhZ308L3NwYW4+YCkuam9pbigiIil9PC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2FydGljbGU+CiAgICAgIGA7CiAgICB9KQogICAgLmpvaW4oIiIpOwoKICBpZiAoIWZpbHRlcmVkLmxlbmd0aCkgewogICAgY2hhcHRlckxpc3QuaW5uZXJIVE1MID0gYDxhcnRpY2xlIGNsYXNzPSJjaGFwdGVyQ2FyZCI+PGRpdj48L2Rpdj48ZGl2PjxoMz7msqHmnInmiL7liLDljLrphY3lhoXlrrk8L2gzPjxwPu 换一个关键词，或切回“全部部分”。</p></div></article>`;
+const parts = [
+  { id: 1, title: '冷战时期的筹码', range: '第 1-6 章', summary: '从二战后的计算需求讲起，说明晶体管、集成电路、光刻和早期军方订单如何把美国带入硅时代。' },
+  { id: 2, title: '美国世界的电路', range: '第 7-14 章', summary: '对比苏联复制路线与美国市场化创新，同时展示芯片怎样进入消费电子、亚洲组装和美国军事体系。' },
+  { id: 3, title: '失去领导能力？', range: '第 15-20 章', summary: '讲日本半导体崛起、美国存储芯片产业受冲击，以及美国对产业主导权流失的焦虑。' },
+  { id: 4, title: '美国复兴', range: '第 21-28 章', summary: '英特尔、微软、韩国、军事电子和苏联衰落共同构成美国反击与冷战胜利的技术侧面。' },
+  { id: 5, title: '集成电路，集成世界？', range: '第 29-34 章', summary: '中国台湾代工、中国大陆建厂、光刻竞争和全球化分工出现，芯片供应链开始高度跨国化。' },
+  { id: 6, title: '离岸创新？', range: '第 35-41 章', summary: '无晶圆厂模式、台积电联盟、苹果自研芯片、EUV光刻机和英特尔转折，说明创新正在分散到全球节点。' },
+  { id: 7, title: '中国的挑战', range: '第 42-48 章', summary: '聚焦中国制造、技术转让、产业政策、华为和5G，解释中国为何成为美国芯片战略的核心对象。' },
+  { id: 8, title: '芯片瓶颈', range: '第 49-54 章', summary: '从出口管制、福建晋华、华为制裁、短缺危机和台湾困境，收束到当代芯片战争的脆弱节点。' }
+];
+
+const chapters = [
+  [1, 1, '从钢铁到硅片', '二战,计算能力,军事技术', '本章用二战的工业动员开场，说明过去战争靠钢铁、石油和产能取胜，但战后军事竞争开始转向精确计算和电子控制。盛田昭夫、张忠谋、安迪·格鲁夫等人的经历，也预示了硅时代的人才流动。'],
+  [2, 1, '开关', '晶体管,贝尔实验室,真空管', '这一章解释计算的基础是大量可靠的开关。真空管计算机巨大而脆弱，晶体管则把计算开关变小、变稳，为电子计算产业化打开道路。'],
+  [3, 1, '诺伊斯、基尔比和集成电路', '集成电路,TI,仙童', '本章讲集成电路的发明。基尔比和诺伊斯找到把多个电子元件集成到同一材料上的办法，但作者强调，真正改变世界的是可量产、可降价的产业化能力。'],
+  [4, 1, '起飞', '硅谷,仙童,创业', '仙童半导体把工程师、风险资本、军方订单和创业文化连接起来。芯片产业的起飞不是单一发明，而是一整套硅谷生态开始运转。'],
+  [5, 1, '迫击炮和规模生产', '光刻,良率,张忠谋', '本章转向制造能力。光刻让电路可以复制到晶圆上，但良率、污染控制和工艺稳定才是难点，张忠谋在TI提升良率的故事凸显制造壁垒。'],
+  [6, 1, '“我……要……发……财”', '摩尔定律,民用市场,风险资本', '芯片从军方需求走向民用市场。诺伊斯和摩尔用降价扩大应用，摩尔定律既是技术预测，也是一种性能上升、成本下降、市场扩张的商业循环。'],
+  [7, 2, '苏联硅谷', '苏联,泽列诺格勒,冷战', '苏联试图建立自己的电子工业中心追赶美国，但计划体制限制了创新速度。作者借此对比美国开放竞争生态与苏联封闭复制路线。'],
+  [8, 2, '“复制”策略', '逆向工程,计划经济,技术追赶', '苏联通过仿制美国芯片追赶，但复制天然滞后。等仿制品生产出来，美国企业往往已经进入下一代技术，快节奏产业让照抄变成落后战略。'],
+  [9, 2, '晶体管推销员', '消费电子,索尼,市场', '晶体管开始进入民用消费电子。索尼把美国发明转化为大众产品，证明亚洲企业能在制造、产品化和全球销售上建立优势。'],
+  [10, 2, '“晶体管女孩”', '亚洲组装,劳动力,供应链', '美国芯片公司把封装和组装迁往亚洲，以降低成本并利用细致劳动力。这个低端入口后来成为亚洲学习半导体供应链的起点。'],
+  [11, 2, '精准打击', '越战,制导武器,军事电子', '芯片改变军事能力。微电子让激光制导炸弹、传感器和控制系统更可靠，战争逻辑从大量投放转向精确打击。'],
+  [12, 2, '供应链策略', '亚洲盟友,离岸生产,美国秩序', '半导体供应链也是冷战战略工具。美国企业在亚洲设厂既追求效率，也帮助把亚洲盟友纳入美国主导的技术和经济秩序。'],
+  [13, 2, '英特尔的革命', '微处理器,英特尔,个人电脑', '英特尔和微处理器让通用计算进入更广泛设备，为个人电脑时代铺路。芯片从零部件变成驱动整个计算生态的平台。'],
+  [14, 2, '五角大楼的抵消战略', '抵消战略,传感器,冷战军事', '美国用微电子抵消苏联常规军力优势。传感器、制导、通信和计算能力让美军更精准地发现并打击目标，芯片进入国家安全战略核心。'],
+  [15, 3, '“竞争很激烈”', '日本挑战,DRAM,产业竞争', '日本企业在DRAM等存储芯片上快速追赶，依靠质量控制、制造纪律和长期投资冲击美国公司。美国开始担心半导体领导权转向亚洲。'],
+  [16, 3, '“与日本的战争”', '贸易摩擦,产业政策,美国焦虑', '美国对日本半导体扩张强烈反应，认为日本政府、银行和企业协同构成不公平竞争。芯片竞争由此升级为贸易政治问题。'],
+  [17, 3, '“运送垃圾”', '质量管理,制造能力,存储芯片', '日本企业在芯片质量和可靠性上形成优势。美国公司过去依赖创新领先，但在标准化存储芯片市场，制造一致性变得同样决定性。'],
+  [18, 3, '20世纪80年代的原油', '半导体战略,经济安全,日本', '芯片在20世纪80年代被视为类似原油的战略资源，因为所有电子产品都离不开它。美国担心依赖日本会损害经济和军事自主性。'],
+  [19, 3, '死亡螺旋', '美国企业,退出DRAM,产业低谷', '美国存储芯片企业陷入价格战、亏损和投资不足。市场份额下降削弱研发投入，产业进入恶性循环，迫使企业重新选择战场。'],
+  [20, 3, '日本可以说“不”', '技术民族主义,日美关系,产业权力', '日本半导体成功带来产业自信和日美紧张。作者用这一阶段说明，技术领先会转化为外交、贸易和战略话语权。'],
+  [21, 4, '芯片之王', '英特尔,安迪·格鲁夫,CPU', '英特尔放弃被日本压制的DRAM，转向微处理器。安迪·格鲁夫的取舍帮助英特尔成为个人电脑时代的核心公司。'],
+  [22, 4, '颠覆英特尔', '微软,PC生态,Wintel', '英特尔与微软共同塑造PC生态。处理器和操作系统互相强化，美国优势从单一制造转向平台标准、软件和架构控制。'],
+  [23, 4, '“敌人的敌人”：韩国的崛起', '三星,韩国,存储芯片', '韩国企业在政府支持、财阀投资和全球市场机会中进入存储芯片产业。美国与日本竞争也为韩国崛起打开空间。'],
+  [24, 4, '“这就是未来”', '个人电脑,计算平台,市场扩张', '个人电脑把芯片需求推向新阶段。计算能力从军方和企业主机进入办公室与家庭，市场围绕软件、处理器和整机厂商形成生态。'],
+  [25, 4, '克格勃T局', '技术窃取,苏联,出口管制', '苏联通过情报系统获取西方技术，但偷到资料和设备并不能复制完整产业。芯片领先依赖持续迭代、供应商网络和商业反馈。'],
+  [26, 4, '“大规模毁灭性武器”：抵消战略的影响', '精确武器,军事革命,美国优势', '芯片让美国武器系统在探测、通信、导航和打击上形成代差。微电子成为军事革命基础，也强化冷战后期美国优势。'],
+  [27, 4, '战争英雄', '海湾战争,智能武器,技术展示', '战争场景展示芯片化武器威力。精确制导和电子系统让美国军事技术全球亮相，芯片从幕后组件变成塑造战争结果的力量。'],
+  [28, 4, '“冷战结束了，你们赢了”', '冷战终结,技术优势,美国秩序', '冷战收束时，苏联无法跟上美国微电子体系。芯片不是唯一原因，但深刻改变了军事平衡和经济竞争。'],
+  [29, 5, '“台湾想要一个半导体产业”', '台积电,张忠谋,中国台湾', '中国台湾把半导体作为发展战略，张忠谋提出专业代工模式。台积电由此改变全球产业分工，也让台湾进入技术核心。'],
+  [30, 5, '“所有人都必须制造半导体”', '产业政策,亚洲竞争,制造扩张', '各经济体争相进入半导体制造，但芯片不是喊口号就能成功。它需要长期资本、人才、客户和工艺积累。'],
+  [31, 5, '“与中国人分享上帝的爱”', '中芯国际,中国大陆,技术引进', '中国大陆早期先进制造努力依靠海外人才、台湾经验和外部设备。中国进入全球制造链，但仍高度依赖外部关键资源。'],
+  [32, 5, '光刻战争', 'ASML,光刻,设备', '光刻设备成为半导体核心战场。随着晶体管缩小，光刻机复杂度上升，芯片领导权也掌握在关键制造工具供应商手中。'],
+  [33, 5, '创新者的困境', '硬盘,破坏式创新,产业更替', '作者借破坏式创新解释芯片行业变化。领先企业可能被现有客户和商业模式束缚，错过下一代技术方向。'],
+  [34, 5, '跑得更快？', '摩尔定律,竞争节奏,全球分工', '摩尔定律让产业持续竞速。每代芯片都要求更高资本开支、更精细设备和更复杂供应链，追赶永远不是一次性任务。'],
+  [35, 6, '“真正的男人要有晶圆厂”', '晶圆厂,资本开支,IDM', '传统观念认为拥有晶圆厂才是真实力，但制造成本飙升让建厂成为负担。行业开始从垂直整合转向专业分工。'],
+  [36, 6, '“无晶圆厂的革命”', 'Fabless,高通,设计公司', '无晶圆厂模式兴起，设计公司专注架构、算法和市场，把制造外包给台积电等代工厂，降低创业门槛并重塑产业分工。'],
+  [37, 6, '张忠谋的大联盟', '台积电,生态联盟,代工模式', '台积电成功不只靠工厂，也靠与设计公司、EDA、设备商和客户建立信任。它不与客户竞争，因而成为生态基础设施。'],
+  [38, 6, '苹果硅', '苹果,Arm,移动芯片', '苹果从采购芯片转向自研处理器，依靠Arm架构、设计团队和台积电制造能力，把移动芯片推向领先水平。'],
+  [39, 6, 'EUV光刻机', 'EUV,ASML,极限制造', 'EUV光刻机是几十年研发、上千家供应商和多国技术能力的集合。没有这种关键设备，就无法制造最先进节点。'],
+  [40, 6, '“没有B计划”', '台积电,供应依赖,先进制程', '全球顶尖芯片设计公司高度依赖台积电先进制程。供应链效率极高，却缺乏真正可替代方案。'],
+  [41, 6, '英特尔如何遗忘创新', '英特尔转折,制程延误,组织惯性', '英特尔从长期领先到遭遇制程和战略问题。过去的垂直整合优势在新分工时代变成包袱，组织惯性拖慢创新。'],
+  [42, 7, '中国制造', '中国制造,产业升级,进口依赖', '中国是全球电子制造中心和最大芯片消费市场，但在先进芯片、设备和软件上依赖外部。规模不等于掌握关键瓶颈。'],
+  [43, 7, '“把冲锋号吹起来”', '政策动员,大基金,自主可控', '中国政府加大半导体投资和政策动员。资金能加速建设，但不能自动创造高端工艺、人才网络和全球生态。'],
+  [44, 7, '技术转让', '合资,知识产权,追赶策略', '中国通过合资、人才流动、并购和供应链学习获取技术。但先进半导体能力分散在设备、材料、软件和经验中，难以一次获得。'],
+  [45, 7, '“并购势必发生”', '海外并购,审查,资本', '中国资本尝试通过并购进入关键芯片环节，引发美国和盟友安全审查。半导体公司从商业资产变成战略资产。'],
+  [46, 7, '华为的崛起', '华为,海思,通信设备', '华为从通信设备公司成长为全球科技巨头，并通过海思提升芯片设计能力。它在全球市场、5G和芯片设计上形成系统性挑战。'],
+  [47, 7, '5G未来', '5G,网络基础设施,标准竞争', '5G之所以政治化，是因为它承载未来数据、设备和工业连接。华为领先让芯片、通信和地缘政治汇合到同一战场。'],
+  [48, 7, '下一个抵消战略', 'AI,军事竞争,算力', '芯片竞争与AI、无人系统和未来军事相连。下一轮军事优势不只靠平台武器，还靠传感器、算法和算力。'],
+  [49, 8, '“我们正在竞争的一切”', '中美竞争,出口管制,技术霸权', '美国逐步认识到对华竞争覆盖经济、军事、通信和AI，而芯片贯穿其中。控制关键技术流向成为限制中国能力的重要手段。'],
+  [50, 8, '福建晋华', '存储芯片,制裁,美光', '福建晋华案例说明美国如何用法律和出口管制打击中国半导体项目。存储芯片竞争被升级为国家间技术冲突。'],
+  [51, 8, '打击华为', '实体清单,台积电,芯片扼制', '美国切断华为获取采用美国技术制造的先进芯片能力。华为能设计高端芯片，却依赖台积电和全球设备软件体系制造。'],
+  [52, 8, '中国的人造卫星时刻？', '国产替代,战略觉醒,长期追赶', '作者讨论美国压力是否会激发中国半导体突破。危机能推动投入和意志，但先进芯片需要长期生态建设。'],
+  [53, 8, '短缺和供应链', '缺芯,疫情,供应链脆弱性', '疫情时期全球缺芯暴露供应链脆弱性。半导体供应链效率极高，但小范围扰动也能传导到汽车、电子和工业生产。'],
+  [54, 8, '台湾困境', '台湾,台积电,地缘风险', '最后收束到台湾。台积电让台湾成为先进制造中心，也让全球最关键的计算能力集中在地缘风险极高的节点上。']
+].map(([no, part, title, tags, summary]) => ({ no, part, title, tags: tags.split(','), summary }));
+
+const partMap = document.querySelector('#partMap');
+const partSelect = document.querySelector('#partSelect');
+const chapterList = document.querySelector('#chapterList');
+const searchInput = document.querySelector('#searchInput');
+const backTop = document.querySelector('#backTop');
+
+function renderParts() {
+  partMap.innerHTML = parts.map((part) => `
+    <article class='partCard'>
+      <div class='partMeta'>Part ${part.id} / ${part.range}</div>
+      <h3>${part.title}</h3>
+      <p>${part.summary}</p>
+    </article>
+  `).join('');
+  partSelect.insertAdjacentHTML('beforeend', parts.map((part) => `<option value='${part.id}'>第 ${part.id} 部：${part.title}</option>`).join(''));
+}
+
+function renderChapters() {
+  const keyword = searchInput.value.trim().toLowerCase();
+  const selectedPart = partSelect.value;
+  const filtered = chapters.filter((chapter) => {
+    const inPart = selectedPart === 'all' || String(chapter.part) === selectedPart;
+    const haystack = `${chapter.no} ${chapter.title} ${chapter.summary} ${chapter.tags.join(' ')}`.toLowerCase();
+    return inPart && (!keyword || haystack.includes(keyword));
+  });
+  chapterList.innerHTML = filtered.map((chapter) => {
+    const part = parts.find((item) => item.id === chapter.part);
+    return `
+      <article class='chapterCard'>
+        <div class='chapterNo'>
+          <strong>${String(chapter.no).padStart(2, '0')}</strong>
+          <span>第 ${chapter.part} 部<br>${part.title}</span>
+        </div>
+        <div>
+          <h3>${chapter.title}</h3>
+          <p>${chapter.summary}</p>
+          <div class='tags'>${chapter.tags.map((tag) => `<span>${tag}</span>`).join('')}</div>
+        </div>
+      </article>
+    `;
+  }).join('');
+  if (!filtered.length) {
+    chapterList.innerHTML = `<article class='chapterCard'><div></div><div><h3>没有找到匹配内容</h3><p>换一个关键词，或切回“全部部分”。</p></div></article>`;
   }
 }
 
-const source = new TextDecoder().decode(Uint8Array.from(atob(encodedScript), c => c.charCodeAt(0)));
-(0, eval)(source);
+renderParts();
+renderChapters();
+searchInput.addEventListener('input', renderChapters);
+searchInput.addEventListener('search', renderChapters);
+partSelect.addEventListener('change', renderChapters);
+window.addEventListener('scroll', () => backTop.classList.toggle('show', window.scrollY > 600));
+backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
