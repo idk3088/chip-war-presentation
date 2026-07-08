@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Chip supply chain hero image</title>
+  <desc id="desc">A silicon wafer, chip traces, world map points, and supply-chain routes.</desc>
+  <defs>
+    <radialGradient id="wafer" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#f4fbff"/>
+      <stop offset="32%" stop-color="#79d7ea"/>
+      <stop offset="68%" stop-color="#244d69"/>
+      <stop offset="100%" stop-color="#101820"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#45d7ff" stop-opacity=".75"/>
+      <stop offset="100%" stop-color="#45d7ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#09111a"/>
+      <stop offset="48%" stop-color="#10202a"/>
+      <stop offset="100%" stop-color="#1b2d34"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" x2="1">
+      <stop offset="0%" stop-color="#132f3c"/>
+      <stop offset="100%" stop-color="#0a1821"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity=".22" fill="none" stroke="#8fd8e7" stroke-width="1">
+    <path d="M1030 230c88-42 185-30 274 22 72 42 135 101 226 86"/>
+    <path d="M985 370c78-52 170-62 263-14 91 47 153 124 292 92"/>
+    <path d="M1015 525c112-16 186 31 269 76 72 40 150 55 252 13"/>
+    <path d="M930 670c121 19 203 76 324 90 92 11 172-11 255-57"/>
+  </g>
+  <g opacity=".18" fill="#d8f8ff">
+    <path d="M1005 238l58-28 73 19 65-12 83 38-28 34-78 0-48 23-75-22z"/>
+    <path d="M1165 348l96-24 112 30 60 54-51 40-94-21-83 26-72-45z"/>
+    <path d="M1018 515l77-31 91 20 67 48-26 52-82-18-78 21-69-32z"/>
+    <path d="M1250 608l96-15 82 31 43 58-71 32-74-20-96 18-48-42z"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M775 475C915 325 1028 285 1186 290" stroke="#2ed3ff" stroke-width="3"/>
+    <path d="M785 510c168-34 295 9 438 132" stroke="#c7832f" stroke-width="3"/>
+    <path d="M700 430c138-126 260-179 395-196" stroke="#8fd8e7" stroke-width="2" opacity=".8"/>
+    <path d="M685 590c199 102 398 126 612 82" stroke="#8fd8e7" stroke-width="2" opacity=".8"/>
+  </g>
+  <g opacity=".95">
+    <circle cx="1132" cy="292" r="7" fill="#2ed3ff"/>
+    <circle cx="1226" cy="642" r="7" fill="#c7832f"/>
+    <circle cx="1068" cy="235" r="5" fill="#d8f8ff"/>
+    <circle cx="1294" cy="670" r="5" fill="#d8f8ff"/>
+  </g>
+  <circle cx="585" cy="465" r="294" fill="url(#glow)" filter="url(#soft)" opacity=".85"/>
+  <circle cx="585" cy="465" r="255" fill="url(#wafer)" opacity=".92"/>
+  <g fill="none" stroke="#d8f8ff" opacity=".36">
+    <circle cx="585" cy="465" r="210"/>
+    <circle cx="585" cy="465" r="165"/>
+    <circle cx="585" cy="465" r="120"/>
+    <path d="M330 465h510M585 210v510M405 285l360 360M765 285L405 645"/>
+  </g>
+  <g transform="translate(485 365)">
+    <rect width="200" height="200" rx="18" fill="url(#chip)" stroke="#9fe7f4" stroke-width="3"/>
+    <rect x="38" y="38" width="124" height="124" rx="10" fill="#122733" stroke="#c7832f" stroke-width="2"/>
+    <g stroke="#2ed3ff" stroke-width="5" stroke-linecap="round">
+      <path d="M0 44h-56M0 84h-82M0 124h-70M0 164h-46"/>
+      <path d="M200 44h62M200 84h92M200 124h78M200 164h54"/>
+      <path d="M44 0v-58M84 0v-84M124 0v-70M164 0v-48"/>
+      <path d="M44 200v66M84 200v88M124 200v76M164 200v58"/>
+    </g>
+    <g fill="#d8f8ff" opacity=".9">
+      <circle cx="69" cy="69" r="6"/>
+      <circle cx="131" cy="69" r="6"/>
+      <circle cx="69" cy="131" r="6"/>
+      <circle cx="131" cy="131" r="6"/>
+    </g>
+  </g>
+  <g opacity=".16" stroke="#ffffff" stroke-width="1">
+    <path d="M0 720h1600M0 760h1600M0 800h1600M0 840h1600"/>
+    <path d="M980 0v900M1040 0v900M1100 0v900M1160 0v900M1220 0v900M1280 0v900M1340 0v900M1400 0v900"/>
+  </g>
+</svg>
