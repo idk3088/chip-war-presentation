@@ -1,0 +1,408 @@
+:root {
+  --ink: #101820;
+  --muted: #5a6675;
+  --line: #d9e0e7;
+  --paper: #f7f5ef;
+  --panel: #ffffff;
+  --cyan: #0b6f8f;
+  --teal: #0f8a7b;
+  --amber: #c7832f;
+  --plum: #5d4b68;
+  --shadow: 0 18px 48px rgba(16, 24, 32, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+  background: #111820;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(7, 11, 16, 0.9), rgba(7, 11, 16, 0.54) 45%, rgba(7, 11, 16, 0.18)),
+    linear-gradient(0deg, rgba(7, 11, 16, 0.72), rgba(7, 11, 16, 0.08) 46%);
+}
+
+.topbar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: min(1120px, calc(100% - 32px));
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.topbar a {
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(10, 18, 26, 0.38);
+  color: #f5f7fa;
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+}
+
+.heroText {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 148px 0 92px;
+  color: white;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--amber);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 760px;
+  font-size: clamp(44px, 8vw, 92px);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+.hero p:last-child {
+  max-width: 720px;
+  margin: 26px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(17px, 2vw, 22px);
+}
+
+.band {
+  padding: 86px 0;
+}
+
+.band > * {
+  width: min(1120px, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+}
+
+.sectionHead h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.12;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.overviewGrid article,
+.talkGrid article,
+.chapterCard,
+.partCard,
+.quoteBox {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.overviewGrid article {
+  min-height: 260px;
+  padding: 24px;
+}
+
+.overviewGrid span {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  color: white;
+  background: var(--cyan);
+  font-weight: 800;
+}
+
+h2,
+h3 {
+  letter-spacing: 0;
+}
+
+.overviewGrid h3,
+.talkGrid h3,
+.chapterCard h3,
+.partCard h3 {
+  margin: 18px 0 10px;
+  line-height: 1.25;
+}
+
+.overviewGrid p,
+.talkGrid p,
+.chapterCard p,
+.partCard p,
+.quoteBox p,
+.wideText p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.thesis {
+  background: #10202a;
+  color: white;
+}
+
+.wideText {
+  display: grid;
+  grid-template-columns: 0.8fr 1.4fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.wideText h2 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 60px);
+}
+
+.wideText p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 20px;
+}
+
+.partMap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.partCard {
+  padding: 22px;
+  border-top: 5px solid var(--teal);
+}
+
+.partCard:nth-child(2n) {
+  border-top-color: var(--cyan);
+}
+
+.partCard:nth-child(3n) {
+  border-top-color: var(--amber);
+}
+
+.partMeta {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.tools input,
+.tools select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--ink);
+  font: inherit;
+}
+
+.chapterList {
+  display: grid;
+  gap: 14px;
+}
+
+.chapterCard {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 20px;
+}
+
+.chapterNo {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.chapterNo strong {
+  font-size: 38px;
+  line-height: 1;
+  color: var(--cyan);
+}
+
+.chapterNo span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.chapterCard h3 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.tags span {
+  padding: 4px 9px;
+  color: #17424d;
+  background: #e7f4f2;
+  border: 1px solid #c8e4df;
+  font-size: 13px;
+}
+
+.talk {
+  background: #e9edf0;
+}
+
+.talkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.talkGrid article {
+  padding: 24px;
+}
+
+.quoteBox {
+  margin-top: 18px;
+  padding: 28px;
+  border-left: 6px solid var(--amber);
+}
+
+.quoteBox h3 {
+  margin: 0 0 14px;
+}
+
+.quoteBox p + p {
+  margin-top: 10px;
+}
+
+.backTop {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: var(--ink);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.backTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 920px) {
+  .overviewGrid,
+  .partMap,
+  .talkGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wideText {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 88vh;
+  }
+
+  .topbar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .topbar a {
+    flex: 0 0 auto;
+  }
+
+  .band {
+    padding: 58px 0;
+  }
+
+  .sectionHead {
+    display: block;
+  }
+
+  .overviewGrid,
+  .partMap,
+  .talkGrid,
+  .tools {
+    grid-template-columns: 1fr;
+  }
+
+  .chapterCard {
+    grid-template-columns: 1fr;
+  }
+
+  .chapterNo {
+    grid-template-columns: auto 1fr;
+    align-items: end;
+  }
+}
